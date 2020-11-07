@@ -3,13 +3,190 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="index-demo.js"></script>
     <script src="main.js"></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
-    <hr/>
+    <header>
+      <h1>Array of Cars! Vroom Vroom</h1>
+    </header>
+      <section id="length-section">
+        <h3 id="description-title" class="sub-title">
+          Arrays! What are they?
+        </h3>
+        <p>
+          Arrays are a great way to store and access information on a website. But enough talk! 
+          Let's see what one looks like, eh?
+        </p>
+        <p>
+          Let's say that you have a list of car types that you'd like to manipulate on a page. Neat!
+          Here's what an array of those can look like: <br>
+          <section class="array-display">
+            let cars = ["Ford", "Honda", "Mercedes", "Tesla"];
+          </section> 
+          Want to know how long that array is? Well, we could just count it, but where's the fun?
+          You can also use a built in JavaScript method called .length! This works on an array, no 
+          matter the size!
+        </p>
+        <button id="length-button" onclick="showLength()">.length button!</button>
+        <p id="length-result"></p>
+      </section>
+      <section id="concat-section">
+        <h3 class="sub-title">
+          .concat()! Combining arrays.
+        </h3>
+        <p>
+          Do you have another list with even more car types? No problem!<br>
+          Here's another array that we can use:
+        </p>
+        <section class="array-display">
+          let moreCars = ["Subaru", "Dodge", "Toyota", "Honda"];
+        </section>
+        <p>But now we have two arrays to deal with. Let's combine them! We can do that using the
+          .concat method. Click the button below to try it out!
+        </p>
+        <button id="concat-button" onclick="showTotalOnGUI()">.concat button!</button>
+        <p id="concat-result"></p>
+      </section>
+      <section id="index-section">
+        <h3 class="sub-title">
+          .indexOf() and .lastIndexOf()!
+        </h3>
+        <p>
+          If you want to know what place an item is in in an array, we've got you covered there, too!<br>
+          Let's find our first Honda using .indexOf(), and our Ford using .lastIndexOf():
+        </p>
+      <button id="indexof-button" onclick="showIndexOnGUI()">.indexOf button!</button>
+      <button id="lastindexof-button" onclick="showLastIndexOnGUI()">.lastIndexOf button</button>
+      <p id="indexof-result"></p>
+      <p id="lastindexof-result"></p>
+      </section>
+      <section id="join-section">
+        <h3 class="sub-title">
+          .join method!
+        </h3>
+        <p>
+          Don't want an array anymore? Let's use the .join method! This will convert that array into 
+          a string:
+        </p>
+        <button id="join-button" onclick="joinOnGUI()">.join button!</button>
+        <p id="join-result"></p>
+      </section>
+      <section id="split-section">
+        <h3 class="sub-title">
+          .split!
+        </h3>
+        <p>
+          Welp, we've got the string. Wait, you didn't want that? You want the array again?<br>
+          No worries! We can do that using the .split method:
+        </p>
+        <button id="split-button" onclick="splitOnGUI()">.split button!</button>
+        <p id="split-result"></p>
+      </section>
+      <section id="reverse-section">
+        <h3 class="sub-title">
+          .reverse!
+        </h3>
+        <p>
+        Want to reverse the array? Can do! With the (you guessed it!) .reverse method:
+        </p>
+        <button id="reverse-button" onclick="reverseGUI()">.reverse button!</button>
+        <p id="reverse-result"></p>
+      </section>
+      <section id="sort-section">
+        <h3 class="sub-title">
+          .sort!
+        </h3>
+        <p>
+          Reverse not enough? Then let's make the list alphabetical using the .sort method!<br>
+          Want to guess which type of car will be first in the array (index[0])? Me too! <br>
+          Hmmm, I'm going to guess... Dodge! You can see the index of my guess by clicking the 
+          "View Guess" button below!
+        </p>
+        <button id="view-guess" onclick="guessAlert()">View Guess!</button>
+        <button id="sort-button" onclick="sortGUIArray()">.sort button!</button>
+        <p id="sort-result"></p>
+      </section>
+      <section id="slice-section">
+        <h3 class="sub-title">
+          .slice!
+        </h3>
+        <p>"Okay, Smarty-Pants" I hear you say, "We've got the arrays. What if I want to 
+          take something out of it and make a new array with just Ford and Honda? Huh?"<br> No problem! We've got .slice 
+          just for that purpose!
+        </p>
+        <button id="slice-button" onclick="sliceGUIArray()">.slice button!</button>
+        <p id="slice-result"></p>
+      </section>
+      <section id="splice-section">
+        <h3 class="sub-title">
+          .splice!
+        </h3>
+        <p>
+          Want words moved within the same array, rather than in a new one? We can do that with .splice!
+          (Not to be confused with .slice)
+        </p>
+        <button id="splice-button" onclick="spliceGUI()">.splice!</button>
+        <p id="splice-result"></p>
+      </section>
+      <section id="push-section">
+        <h3>
+          .push!
+        </h3>
+        <p>We can even add individual values to the array. Let's add the Ford and Honda that we
+          spliced back onto the end of the array:
+        </p>
+        <button id="push-button" onclick="pushGUI()">.push button!</button>
+        <p id="push-result"></p>
+      </section>
+      <section id="pop-section">
+        <h3>
+          .pop!
+          </h3>
+          <p>
+            More ways to remove items? Sure! First we have .pop, to remove the last item:
+          </p>
+        <button id="pop-button" onclick="popGUI()">.pop button!</button>
+        <p id="pop-result"></p>
+      </section>
+      <section id="shift-section">
+        <h3>
+          .shift!
+        </h3>
+        <p>
+          We can remove the first item, too! Let's use .shift:
+        </p>
+        <button id="shift-button" onclick="shiftGUI()">.shift button!</button>
+        <p id="shift-result"></p>
+      </section>
+      <section id="unshift-section">
+        <h3>
+          .unshift!
+        </h3>
+        <p>
+          We can add an item to that same spot by using...wait for it....unshift!
+        </p>
+        <button id="unshift-button" onclick="unshiftGUI()">.unshift button!</button>
+        <p id="unshift-result"></p>
+      </section>
+      <section id="foreach-section">
+        <p>
+          We can also do math with our arrays! Clearly this won't work with car types, so let's make
+          a couple of new arrays to demonstrate:
+        </p>
+        <section class="array-display">
+          let array1 = [23, 45, 0, 2]<br>
+          let array2 = [23, 45, 0, 2, 8, 44, 100, 1, 3, 91, 34]
+        </section>
+        <p>
+          Want to add 2 to each number? We can do that with the same function on each array! Just click
+        the buttons below to see the result!
+        </p>
+        <button id="array1-button" onclick="displayForEachGUI()">Array 1</button>
+        <button id="array2-button" onclick="displayForEachGUI2()">Array 2</button>
+        <p id="array1-result"></p>
+        <p id="array2-result"></p>
+      </section>
+    </main>
   </body>
 </html>

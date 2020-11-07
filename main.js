@@ -12,8 +12,6 @@ console.log(cars.length);
 // last car type should be Honda.
 // Use the concat method to combine the cars and moreCars arrays into another array called totalCars.
 // Run the program
-//**** Added a console.log of totalCars because there was no difference when running the program on 
-// this step ********
 
 console.log("Step 2")
 
@@ -73,6 +71,7 @@ console.log("Step 7")
 carsInReverse = carsInReverse.sort();
 console.log(carsInReverse);
 
+
 //Step 8: .slice() - Use the slice method to remove Ford and Honda from the carsInReverse array and
 //move them into a new array called removedCars
 
@@ -81,6 +80,7 @@ console.log("Step 8");
 let removedCars = carsInReverse.slice(1, 4);
 console.log(removedCars);
 
+
 //Step 9: .splice() - Use the splice method to remove the 2nd and 3rd items in the array carsInReverse
 // and add Ford and Honda in their place.
 
@@ -88,6 +88,7 @@ console.log("Step 9");
 
 let carSplice = carsInReverse.splice(1, 2, "Ford", "Honda");
 console.log(carsInReverse);
+
 
 //Step 10: .push() - use the push method to add the types of cars that you removed using the splice
 //method to the carsInReverse array
@@ -138,15 +139,24 @@ console.log("Step 14");
 let numbers = [23, 45, 0, 2];
 console.log(numbers);
 
-numbers.forEach(addTwo);
+numbers.forEach(addedNumbers => console.log(addedNumbers + 2));
 
-//Come back to this when Keith is back!
-function addTwo(item, index, arr) {
-    arr[index] = item + 2;
-}
-console.log(numbers);
+//Long Form
+// numbers.forEach((item, index, arr) => {
+//     arr[index] = item + 2;
+// });
+// console.log(numbers);
+
+
 
 const numbers2 = [23, 45, 0, 2, 8, 44, 100, 1, 3, 91, 34];
 console.log(numbers2);
-numbers2.forEach(addTwo);
-console.log(numbers2);
+
+numbers2.forEach(addedNumbers => console.log(addedNumbers + 2));
+
+
+//Long Form
+// numbers2.forEach(function (item, index, arr) {
+//     arr[index] = item + 2;
+// });
+// console.log(numbers2);
