@@ -1,0 +1,76 @@
+/* Background for Parallax Scrolling */
+
+html {
+  background-image: url(./images/jake-givens-road-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  color: white;
+  text-align: center;
+  font-size: 25pt;
+  font-family: "Kaushan Script", cursive;
+  animation: zoomInLeft;
+  animation-duration: 0.75s;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 600px));
+  justify-content: center;
+  grid-gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.demo-section {
+  display: grid;
+  background-color: rgb(211, 209, 208, 0.7);
+  justify-items: center;
+  padding: 10px;
+  text-align: center;
+
+  box-shadow: 0px 0px 10pt 1pt black;
+}
+
+#length-section,
+#index-section,
+#split-section,
+#sort-section,
+#splice-section,
+#pop-section,
+#unshift-section {
+  grid-column: 1 / 2;
+}
+
+#concat-section,
+#join-section,
+#reverse-section,
+#slice-section,
+#push-section,
+#shift-section,
+#foreach-section {
+  grid-column: 2 / 3;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  #concat-section,
+  #join-section,
+  #reverse-section,
+  #slice-section,
+  #push-section,
+  #shift-section,
+  #foreach-section {
+    grid-column: 1 / 2;
+  }
+}
