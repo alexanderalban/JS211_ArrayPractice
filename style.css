@@ -8,6 +8,8 @@ html {
   background-size: cover;
 }
 
+/* Main Content */
+
 header {
   color: white;
   text-align: center;
@@ -58,6 +60,8 @@ main {
 h3 {
   font-size: 20pt;
 }
+
+/* Reactivity */
 
 @media (max-width: 800px) {
   main {

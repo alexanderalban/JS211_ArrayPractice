@@ -1,16 +1,15 @@
-//Step 1
+
 //*******Alex Note! I have split everything up into an actual solution, and GUI Demonstration.
-//*******All GUI Demo works will be separated with ******, and may not perfectly match the actual
-//******* */ solutions (in fact, I know they wont). Please see the console.log for the actual solutions, 
-//*******rather than the demo. Thanks!
-//******Wrote function to connect to GUI
+//*******This is a demonstration of the concepts, built specifically for the front-end site
+//*******In some instances, I have substituted other arrays for expediency, and ease of demonstation
+//*******For the full assignment, and actual solutions, please see both main.js and the console.logs
+
+//Step 1
 const showLength = () => {
     document.getElementById("length-result").innerHTML = cars.length;
 }
 
 //Step 2
-//*******GUI function! edited this to be other variables, as JavaScript ran through more functions 
-//with totalCars down below
 let carsdemo1 = ["Ford", "Honda", "Mercedes", "Tesla"];
 let carsdemo2 = ["Subaru", "Dodge", "Toyota", "Honda"];
 let showTotalOnGUI = () => {
@@ -84,7 +83,7 @@ const spliceGUI = () => {
 
 //Step 10
 //*****GUI push! Due to inconsistencies with demo vs actual, just pushing new array to GUI. As with
-// all steps in this assignment, please see console.log Step 10 for actual solution
+// all steps in this assignment, please see main.js and console.log Step 10 for actual solution
 
 let pushdemo = ["Dodge", "Ford", "Honda", "Honda", "Mercedes", "Subaru", "Tesla", "Toyota", "Ford", "Honda"];
 let pushGUI = () => {
@@ -109,7 +108,7 @@ let shiftGUI = () => {
 }
 
 //Step 13
-//Adding another array here for expediency/demo purposes, please see main.js/console.log for actual 
+//Adding another array here for expediency/demo purposes, please see main.js and console.log for actual 
 //solution
 
 let unshiftArray = ["BMW", "Ford", "Honda", "Honda", "Mercedes", "Subaru", "Tesla", "Toyota", "Ford"];

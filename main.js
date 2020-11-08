@@ -1,3 +1,7 @@
+//****This is where the actual assignment solutions live! Please see this and the console.logs for the 
+//****solutions
+
+
 // Step 1: .length - Create an array called cars which consists of 4 different types of cas a String
 // type. The first car type should be Ford and includes Honda.
 // Console.log the length of the array
@@ -63,7 +67,8 @@ console.log(carsInReverse);
 // Based on the types of cars you used, predict which item in the array should be at index 0.
 // Use the following code to confirm or reject your prediction:
 // alert(carsInReverse.indexOf('yourPrediction'));
-// *****Commented out the alert so that the test could pass without a huge message
+// *****Commented out the alert so that the test could pass without a huge message.
+// ****The front-facing site actually has this alert built in on the .sort section
 
 console.log("Step 7")
 
